@@ -3,8 +3,8 @@
 // A the script to your selected page to start counting,
 // To display the counter add - Visitors: echo $Rcounter_count to the area.
 $Rcounter_digit = 7;
-$Rcounter_dpath = "Path to directory! : Example ../visitors";
-$Rcounter_fpath = "Path to text file: example ../visits.txt";
+$Rcounter_dpath = "/visitors"; // enter the path or simple embed into the page.
+$Rcounter_fpath = "visitors/visits.txt"; // enter the text file, This is not needed as it will create the file if it doesn't exist.
 // Check if directory and file exists, if not then create it.
 if (!file_exists($Rcounter_fpath)) {
   if (!is_dir($Rcounter_dpath)) {
