@@ -1,6 +1,6 @@
 <?php
 // RudderCount - Created by Ruddernation Design™ 2015 - https://www.ruddernation.com
-// A the script to your selected page to start counting,
+// A the script to your selected page to start counting the number of visits you get,
 // To display the counter add - Visitors: echo $Rcounter_count to the area.
 $Rcounter_digit = 5; // This is the number of digits you want, If your website has a lot of visitors then you can change here, This can also be edited in strlen making this obsolete.
 $Rcounter_dpath = "/visitors"; // enter the path or simple embed into the page.
