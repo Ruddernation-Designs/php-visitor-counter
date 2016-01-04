@@ -1,10 +1,10 @@
 <?php
-// RudderCount - Created by Ruddernation Design™ 2015 - https://www.ruddernation.com
+// RudderCount - Created by Ruddernation Design™ - https://www.ruddernation.com
 // A the script to your selected page to start counting the number of visits you get,
 // To display the counter add - Visitors: echo $Rcounter_count to the area.
-$Rcounter_digit = 5; // This is the number of digits you want, If your website has a lot of visitors then you can change here, This can also be edited in strlen making this obsolete.
-$Rcounter_dpath = "/visitors"; // enter the path or simple embed into the page.
-$Rcounter_fpath = "visitors/visits.txt"; // enter the text file, This is not needed as it will create the file if it doesn't exist.
+$Rcounter_digit = 5; 
+$Rcounter_dpath = "/visitors"; 
+$Rcounter_fpath = "visitors/visits.txt"; 
 // Check if directory and file exists, if not then create it.
 if (!file_exists($Rcounter_fpath)) {
   if (!is_dir($Rcounter_dpath)) {
@@ -12,7 +12,7 @@ if (!file_exists($Rcounter_fpath)) {
   }
   $Rcounter_fso = fopen($Rcounter_fpath,"w");
   flock($Rcounter_fso, 2);
-  fputs($Rcounter_fso, 0); // Start number for counter, if you want to start the counter at 100 then you'd put in 100.
+  fputs($Rcounter_fso, 0);
   flock($Rcounter_fso, 3);
   fclose($Rcounter_fso);
 }
